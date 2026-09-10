@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26369da4-20cf-4169-a925-d97386fd429f" name="Changes" comment="For Assignment1. It is about Builder Pattern.">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Subject_Software-Design-Patterns.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/Director.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/House.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/HouseWithGarden.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/HouseWithSwimmingPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/RegularHouse.class" beforeDir="false" />
-    </list>
+    <list default="true" id="26369da4-20cf-4169-a925-d97386fd429f" name="Changes" comment="For Assignment1. It is about Builder Pattern." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,19 +41,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/AITU Subjects/SDP/Subject_Software-Design-Patterns"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/AITU Subjects/SDP/Subject_Software-Design-Patterns&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,7 +77,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789062732263</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="For Assignment1. It is about Builder Pattern.">
+      <option name="closed" value="true" />
+      <created>1789063409184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1789063409184</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
