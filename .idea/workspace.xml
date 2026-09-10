@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26369da4-20cf-4169-a925-d97386fd429f" name="Changes" comment="For Assignment1. It is about Builder Pattern.">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Subject_Software-Design-Patterns.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/Director.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/HouseWithGarden.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/HouseWithSwimmingPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Subject_Software-Design-Patterns/RegularHouse.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SanZhuss&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SanZhuss/Subject_Software-Design-Patterns.git&quot;,
+    &quot;accountId&quot;: &quot;fd2eab94-70ea-4047-be15-3fe4624a8124&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3J8tAkrajUtGkaPhUSDJ8R1UPIR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/AITU Subjects/SDP/Subject_Software-Design-Patterns"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26369da4-20cf-4169-a925-d97386fd429f" name="Changes" comment="" />
+      <created>1789054381735</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789054381735</updated>
+    </task>
+    <task id="LOCAL-00001" summary="For Assignment1. It is about Builder Pattern.">
+      <option name="closed" value="true" />
+      <created>1789062732263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1789062732263</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="For Assignment1. It is about Builder Pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="For Assignment1. It is about Builder Pattern." />
+  </component>
+</project>
