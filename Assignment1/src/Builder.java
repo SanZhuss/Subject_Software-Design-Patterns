@@ -1,9 +1,21 @@
-public interface Builder {
-    void buildWalls(String walls);
-    void buildDoors(String doors);
-    void buildWindows(String windows);
-    void buildRooms(String rooms);
-    void buildSwimmingPool(boolean hasSwimmingPool);
-    void buildGarden(boolean hasGarden);
-    House getResult();
+public abstract class Builder {
+    protected House house = new House();
+
+    public void buildWalls(String walls) {
+        house.setWalls(walls);
+    }
+
+    public void buildDoors(String doors) {
+        house.setDoors(doors);
+    }
+
+    public void buildWindows(String windows) {
+        house.setWindows(windows);
+    }
+
+    public void buildRooms(String rooms) {
+        house.setRooms(rooms);
+    }
+
+    public abstract House build();
 }

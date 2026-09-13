@@ -4,8 +4,6 @@ public class Director {
         builder.buildDoors("3");
         builder.buildWindows("5");
         builder.buildRooms("4");
-        builder.buildSwimmingPool(false);
-        builder.buildGarden(false);
-        return builder.getResult();
+        return builder.build();
     }
 }

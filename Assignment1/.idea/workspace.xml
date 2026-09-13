@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aee6f28-114b-4ec8-8e83-c8ffd3e58ada" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Subject_Software-Design-Patterns.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Subject_Software-Design-Patterns.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Subject_Software-Design-Patterns/Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Subject_Software-Design-Patterns/Director.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Subject_Software-Design-Patterns/House.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Subject_Software-Design-Patterns/HouseWithGarden.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Subject_Software-Design-Patterns/HouseWithSwimmingPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Subject_Software-Design-Patterns/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Subject_Software-Design-Patterns/RegularHouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HouseWithGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HouseWithGarden.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HouseWithSwimmingPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HouseWithSwimmingPool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,21 +14,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SanZhuss"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SanZhuss&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SanZhuss/Subject_Software-Design-Patterns.git",
-    "accountId": "fd2eab94-70ea-4047-be15-3fe4624a8124"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SanZhuss/Subject_Software-Design-Patterns.git&quot;,
+    &quot;accountId&quot;: &quot;fd2eab94-70ea-4047-be15-3fe4624a8124&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3J9BMHsOLmEtxWc3ShNErloXtO5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,7 +41,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/AITU Subjects/SDP/Subject_Software-Design-Patterns/Assignment1"
+    "last_opened_file_path": "C:/AITU Subjects/Software_design_pattern/Subject_Software-Design-Patterns/Assignment1"
   }
 }]]></component>
   <component name="SharedIndexes">

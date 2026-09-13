@@ -1,37 +1,38 @@
+
 public class House {
-    private String Walls;
-    private String Doors;
-    private String Windows;
-    private String Rooms;
-    private boolean HasSwimmingPool;
-    private boolean HasGarden;
+    private String walls;
+    private String doors;
+    private String windows;
+    private String rooms;
+    private boolean hasSwimmingPool;
+    private boolean hasGarden;
 
     //Getters
-    public String getWalls(){ return Walls; }
-    public String getDoors() { return Doors; }
-    public String getWindows() { return Windows; }
-    public String getRooms() { return Rooms; }
-    public boolean isSwimmingPool() { return HasSwimmingPool; }
-    public boolean isGarden() { return HasGarden; }
+    public String getWalls(){ return walls; }
+    public String getDoors() { return doors; }
+    public String getWindows() { return windows; }
+    public String getRooms() { return rooms; }
+    public boolean isSwimmingPool() { return hasSwimmingPool; }
+    public boolean isGarden() { return hasGarden; }
 
     //Setters
-    public void setWalls(String walls) { this.Walls = walls; };
-    public void setDoors(String doors) { this.Doors = doors; };
-    public void setWindows(String windows) { this.Windows = windows; };
-    public void setRooms(String rooms){ this.Rooms = rooms; };
-    public void setHasSwimmingPool(boolean hasSwimmingPool){ this.HasSwimmingPool = hasSwimmingPool; };
-    public void setHasGarden(boolean hasGarden){ this.HasGarden = hasGarden; };
+    public void setWalls(String walls) { this.walls = walls; };
+    public void setDoors(String doors) { this.doors = doors; };
+    public void setWindows(String windows) { this.windows = windows; };
+    public void setRooms(String rooms){ this.rooms = rooms; };
+    public void setHasSwimmingPool(boolean hasSwimmingPool){ this.hasSwimmingPool = hasSwimmingPool; };
+    public void setHasGarden(boolean hasGarden){ this.hasGarden = hasGarden; };
 
     //toString
     @Override
     public String toString() {
-        String base = "House with " + Walls + " walls " + Doors + " doors " + Rooms + " Rooms";
+        String base = "House: Walls {" + walls + "}; Doors {" + doors + "}; Windows {" + windows + "}; Rooms {" + rooms + "}";
 
-        if (HasGarden){
-            base += " with garden";
+        if (hasGarden){
+            base += "; Garden {" + true + "}";
         }
-        if (HasSwimmingPool) {
-            base += " with swimming pool";
+        if (hasSwimmingPool) {
+            base += "; SwimmingPool {" + true + "}";
         }
 
         return base + ".";
