@@ -5,9 +5,9 @@ This project demonstrates the implementation of the Builder Design Pattern in Ja
 The system builds different types of houses using the same construction process while allowing different final representations.
 
 Implemented house types:
-Regular House
-House With Garden
-House With Swimming Pool
+Regular House,
+House With Garden,
+House With Swimming Pool,
 
 
 Builder Pattern Components:
