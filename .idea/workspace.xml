@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26369da4-20cf-4169-a925-d97386fd429f" name="Changes" comment="Changed a lot to suit Clean Code. and added README to assignment1" />
+    <list default="true" id="26369da4-20cf-4169-a925-d97386fd429f" name="Changes" comment="Changed a lot to suit Clean Code. and added README to assignment1">
+      <change beforePath="$PROJECT_DIR$/.idea/Subject_Software-Design-Patterns.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Subject_Software-Design-Patterns.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

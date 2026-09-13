@@ -1,28 +1,30 @@
 # Builder Pattern – House Construction
-Description
 
 This project demonstrates the implementation of the Builder Design Pattern in Java.
 
 The system builds different types of houses using the same construction process while allowing different final representations.
 
 Implemented house types:
-
 Regular House
 House With Garden
 House With Swimming Pool
-Builder Pattern Components
-Product
-House
-Builder
-Builder (abstract class)
-Concrete Builders
-RegularHouse
-HouseWithGarden
-HouseWithSwimmingPool
-Director
-Director
-Client
-Main
+
+
+Builder Pattern Components:
+    Product:
+        House
+    Builder:
+        Builder (abstract class)
+    Concrete Builders:
+        RegularHouse
+        HouseWithGarden
+        HouseWithSwimmingPool
+    Director:
+        Director
+    Client:
+        Main
+
+        
 How It Works
 
 The Director controls the construction process by calling the builder methods in a predefined order.
