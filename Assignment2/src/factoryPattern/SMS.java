@@ -1,7 +1,7 @@
 package factoryPattern;
 
 public class SMS extends Notification{
-    String phoneNumber;
+    private String phoneNumber;
 
     public SMS(String message, String recipient, String phoneNumber){
         super(message, recipient);

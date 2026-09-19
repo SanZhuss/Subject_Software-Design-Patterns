@@ -1,7 +1,7 @@
 package factoryPattern;
 
 public class Push extends Notification{
-    String deviceId;
+    private String deviceId;
 
     public Push(String message, String recipient, String deviceId){
         super(message, recipient);

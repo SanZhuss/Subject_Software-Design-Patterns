@@ -1,7 +1,7 @@
 package factoryPattern;
 
 public class Email extends Notification{
-    String email;
+    private String email;
 
     public Email(String message, String recipient, String email){
         super(message, recipient);

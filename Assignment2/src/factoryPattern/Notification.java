@@ -1,8 +1,8 @@
 package factoryPattern;
 
 abstract class Notification {
-    String message;
-    String recipient;
+    protected String message;
+    protected String recipient;
 
     public Notification(String message, String recipient) {
         this.message = message;
