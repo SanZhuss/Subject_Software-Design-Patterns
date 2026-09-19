@@ -1,5 +1,6 @@
 
 public class House {
+    //Fields
     private String walls;
     private String doors;
     private String windows;

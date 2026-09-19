@@ -1,4 +1,5 @@
 public abstract class Builder {
+    //Creates object of house to apply
     protected House house = new House();
 
     public void buildWalls(String walls) {
