@@ -17,6 +17,6 @@ public abstract class Vehicle {
     }
 
     public void showEngineType() {
-        System.out.println(engine.getEngineType());
+        IO.println(engine.getEngineType());
     }
 }

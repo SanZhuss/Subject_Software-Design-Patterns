@@ -7,11 +7,13 @@ public class Main {
     }
 
     static void vehicleConstruct(Vehicle vehicle){
+        IO.println("|------------------------------------|");
         IO.println("Vehicle: " + vehicle.vehicleInfo());
         vehicle.start();
         vehicle.showEngineType();
         vehicle.drive();
         vehicle.stop();
         IO.println();
+        IO.println("|------------------------------------|");
     }
 }

@@ -5,7 +5,8 @@ public class Main {
             NotificationCreator creator,
             String message,
             String recipient,
-            String destination) {
+            String destination
+    ) {
 
         Notification notification =
                 creator.createNotification(
@@ -17,7 +18,7 @@ public class Main {
         notification.send();
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         sendNotification(
                 new EmailCreator(),
