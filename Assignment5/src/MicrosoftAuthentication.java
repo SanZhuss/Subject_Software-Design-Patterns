@@ -1,45 +1,44 @@
-public class FacebookAuthentication implements AuthenticationStrategy {
-
-    private String username;
+public class MicrosoftAuthentication implements AuthenticationStrategy{
+    private String outlook;
     private String accessToken;
 
-    public FacebookAuthentication(String username,
+    public MicrosoftAuthentication(String outlook,
                                   String accessToken) {
-        this.username = username;
+        this.outlook = outlook;
         this.accessToken = accessToken;
     }
 
     @Override
     public boolean validateCredentials() {
 
-        IO.println("Validating Facebook account...");
+        IO.println("Validating Microsoft account...");
 
-        return username != null
-                && !username.isBlank()
+        return outlook != null
+                && !outlook.isBlank()
                 && accessToken != null
                 && accessToken.length() >= 8;
     }
 
     @Override
     public boolean checkToken(){
-        IO.println("Checking Facebook token...");
+        IO.println("Checking Microsoft token...");
 
-        return accessToken.startsWith("facebook");
+        return accessToken.startsWith("outlook");
     }
 
     @Override
     public boolean authenticate() {
 
         if (!validateCredentials()) {
-            IO.println("Facebook login failed.");
+            IO.println("Microsoft login failed.");
             return false;
         }
         if (!checkToken()){
-            IO.println("Facebook token is incorrect");
+            IO.println("Microsoft token is incorrect");
             return false;
         }
 
-        IO.println("Facebook login successful.");
+        IO.println("Microsoft login successful.");
         return true;
     }
 
@@ -48,7 +47,8 @@ public class FacebookAuthentication implements AuthenticationStrategy {
         if(!authenticate()){
             IO.println("Account do not authenticated.");
         }else{
-            IO.println("Logged out from Facebook account.");
+            IO.println("Logged out from Microsoft account.");
         }
     }
+
 }

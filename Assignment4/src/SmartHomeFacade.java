@@ -7,15 +7,21 @@ public class SmartHomeFacade {
     private final MusicSystem musicSystem;
     private final CurtainSystem curtainSystem;
 
-    public SmartHomeFacade() {
-        securitySystem = new SecuritySystem();
-        lightSystem = new LightSystem();
-        heatingSystem = new HeatingSystem();
-        musicSystem = new MusicSystem();
-        curtainSystem = new CurtainSystem();
-        tvSystem = new TVSystem();
-    }
+    public SmartHomeFacade(
+            LightSystem lightSystem,
+            HeatingSystem heatingSystem,
+            SecuritySystem securitySystem,
+            MusicSystem musicSystem,
+            CurtainSystem curtainSystem,
+            TVSystem tvSystem) {
 
+        this.lightSystem = lightSystem;
+        this.heatingSystem = heatingSystem;
+        this.securitySystem = securitySystem;
+        this.musicSystem = musicSystem;
+        this.curtainSystem = curtainSystem;
+        this.tvSystem = tvSystem;
+    }
     public void arriveHome() {
         securitySystem.disarmSystem();
         lightSystem.turnOn();
@@ -48,6 +54,14 @@ public class SmartHomeFacade {
         lightSystem.setBrightness(50);
         tvSystem.turnOn();
         tvSystem.playMovie();
+    }
+
+    public void vacationMode() {
+        securitySystem.armSystem();
+        heatingSystem.setTemperature(16);
+        lightSystem.turnOff();
+        curtainSystem.closeCurtains();
+        musicSystem.stopMusic();
     }
 
     public void partyMode(){

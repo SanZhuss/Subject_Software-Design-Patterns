@@ -16,6 +16,8 @@ public abstract class Vehicle {
         engine.stopEngine();
     }
 
+    public void setEngine(Engine engine){ this.engine = engine; }
+
     public void showEngineType() {
         IO.println(engine.getEngineType());
     }

@@ -11,12 +11,19 @@ public class GoogleAuthentication implements AuthenticationStrategy {
     @Override
     public boolean validateCredentials() {
 
-        System.out.println("Validating Google account...");
+        IO.println("Validating Google account...");
 
         return gmail != null
                 && gmail.endsWith("@gmail.com")
                 && oauthToken != null
                 && oauthToken.length() >= 8;
+    }
+
+    @Override
+    public boolean checkToken(){
+        IO.println("Checking Google oath token...");
+
+        return oauthToken.startsWith("google");
     }
 
     @Override
@@ -26,13 +33,21 @@ public class GoogleAuthentication implements AuthenticationStrategy {
             System.out.println("Google login failed.");
             return false;
         }
+        if (!checkToken()){
+            IO.println("Google oath token is incorrect");
+            return false;
+        }
 
-        System.out.println("Google login successful.");
+        IO.println("Google login successful.");
         return true;
     }
 
     @Override
     public void logout() {
-        System.out.println("Logged out from Google account.");
+        if(!authenticate()){
+            IO.println("Account do not authenticated.");
+        }else{
+            IO.println("Logged out from Google account.");
+        }
     }
 }

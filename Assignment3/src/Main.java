@@ -1,5 +1,5 @@
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Vehicle car = new Car(new ElectricEngine());
         Vehicle truck = new Truck(new GasolineEngine());
         vehicleConstruct(car);
@@ -13,7 +13,12 @@ public class Main {
         vehicle.showEngineType();
         vehicle.drive();
         vehicle.stop();
-        IO.println();
+        IO.println("\nVehicle with new engine.");
+        vehicle.setEngine(new HybridEngine());
+        vehicle.start();
+        vehicle.showEngineType();
+        vehicle.drive();
+        vehicle.stop();
         IO.println("|------------------------------------|");
     }
 }
