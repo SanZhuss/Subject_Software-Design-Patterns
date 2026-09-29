@@ -1,54 +1,23 @@
-public class FacebookAuthentication implements AuthenticationStrategy {
-
+public class FacebookAuthentication extends AuthenticationStrategy
+{
     private String username;
-    private String accessToken;
+    private String password;
 
-    public FacebookAuthentication(String username,
-                                  String accessToken) {
+    public FacebookAuthentication( String username, String password) {
         this.username = username;
-        this.accessToken = accessToken;
+        this.password = password;
     }
 
     @Override
-    public boolean validateCredentials() {
-
-        IO.println("Validating Facebook account...");
-
-        return username != null
-                && !username.isBlank()
-                && accessToken != null
-                && accessToken.length() >= 8;
-    }
-
-    @Override
-    public boolean checkToken(){
-        IO.println("Checking Facebook token...");
-
-        return accessToken.startsWith("facebook");
-    }
-
-    @Override
-    public boolean authenticate() {
-
-        if (!validateCredentials()) {
-            IO.println("Facebook login failed.");
-            return false;
+    public boolean authenticate()
+    {
+        authenticated = username != null && !username.isBlank() && password != null && password.length() >= 6;
+        if(authenticated)
+        {
+            System.out.println("Facebook login successful");
+        } else {
+            System.out.println("Facebook login failed");
         }
-        if (!checkToken()){
-            IO.println("Facebook token is incorrect");
-            return false;
-        }
-
-        IO.println("Facebook login successful.");
-        return true;
-    }
-
-    @Override
-    public void logout() {
-        if(!authenticate()){
-            IO.println("Account do not authenticated.");
-        }else{
-            IO.println("Logged out from Facebook account.");
-        }
+        return authenticated;
     }
 }

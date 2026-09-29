@@ -1,54 +1,23 @@
-public class MicrosoftAuthentication implements AuthenticationStrategy{
+public class MicrosoftAuthentication extends AuthenticationStrategy
+{
     private String outlook;
-    private String accessToken;
+    private String code;
 
-    public MicrosoftAuthentication(String outlook,
-                                  String accessToken) {
+    public MicrosoftAuthentication(String outlook, String code) {
         this.outlook = outlook;
-        this.accessToken = accessToken;
+        this.code = code;
     }
 
     @Override
-    public boolean validateCredentials() {
+    public boolean authenticate()
+    {
+        authenticated = outlook.endsWith("@astanait.edu.kz") && code != null && !code.isBlank() && code.length() == 4;
 
-        IO.println("Validating Microsoft account...");
-
-        return outlook != null
-                && !outlook.isBlank()
-                && accessToken != null
-                && accessToken.length() >= 8;
-    }
-
-    @Override
-    public boolean checkToken(){
-        IO.println("Checking Microsoft token...");
-
-        return accessToken.startsWith("outlook");
-    }
-
-    @Override
-    public boolean authenticate() {
-
-        if (!validateCredentials()) {
-            IO.println("Microsoft login failed.");
-            return false;
+        if(authenticated) {
+            System.out.println("Microsoft login successful");
+        } else {
+            System.out.println("Microsoft login failed");
         }
-        if (!checkToken()){
-            IO.println("Microsoft token is incorrect");
-            return false;
-        }
-
-        IO.println("Microsoft login successful.");
-        return true;
+        return authenticated;
     }
-
-    @Override
-    public void logout() {
-        if(!authenticate()){
-            IO.println("Account do not authenticated.");
-        }else{
-            IO.println("Logged out from Microsoft account.");
-        }
-    }
-
 }

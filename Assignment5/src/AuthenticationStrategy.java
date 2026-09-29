@@ -1,10 +1,19 @@
-public interface AuthenticationStrategy {
+public abstract class AuthenticationStrategy
+{
+    protected boolean authenticated;
 
-    boolean validateCredentials();
+    public abstract boolean authenticate();
 
-    boolean checkToken();
-
-    boolean authenticate();
-
-    void logout();
+    public void logout()
+    {
+        if(authenticated)
+        {
+            authenticated = false;
+            System.out.println("Logout successful");
+        }
+        else
+        {
+            System.out.println("User already logged out");
+        }
+    }
 }

@@ -3,33 +3,30 @@ import java.util.Map;
 
 public class Main {
 
-    static void main(String[] args) {
-        authentication("user@gmail.com", "gogle123token");
-        authentication("user@gmail.com", "google123token");
+    public static void main(String[] args) {
+        IO.println("Authentication Type:\n1. Google\n2. Facebook\n3. Microsoft\n");
+        authentication("user@gmail.com", "google123token", 1);
+        authentication("user@gmal.com", "google123token", 1);
 
-        authentication("john_smith", "facebok123token");
-        authentication("john_smith", "facebook123token");
+        authentication("john_smith", "facebok123", 2);
+        authentication("john_smith", "faceboo", 2);
 
-        authentication("251355@astanait.edu.kz", "outlok123token");
-        authentication("251355@astanait.edu.kz", "outlook123token");
+        authentication("251355@astanait.edu.kz", "2567", 3);
+        authentication("251355@astanait.edu.kz", "254", 3);
     }
 
-    static void authentication(String mailOrName, String token){
-        AuthenticationContext context = new AuthenticationContext();
+    static void authentication(String contact, String token, int authenticationType){
+        Map<Integer, AuthenticationStrategy> strategies = new HashMap<>();
 
-        if(mailOrName.endsWith("@gmail.com")) {
-            context.setStrategy(new GoogleAuthentication(mailOrName, token));
-        } else if (mailOrName.startsWith("@astanait.edu.kz")){
-            context.setStrategy(new MicrosoftAuthentication(mailOrName, token));
-        } else {
-            context.setStrategy(new FacebookAuthentication(mailOrName, token));
-        }
+        strategies.put(1, new GoogleAuthentication(contact, token));
+        strategies.put(2, new FacebookAuthentication(contact, token));
+        strategies.put(3, new MicrosoftAuthentication(contact, token));
+
+        AuthenticationContext context = new AuthenticationContext(strategies.get(authenticationType));
 
         context.login();
-
         context.logout();
-
-        System.out.println();
+        IO.println();
     }
 
 }
